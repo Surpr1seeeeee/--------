@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080d20">
+  <meta name="description" content="Поздравление Вики с пятнадцатым днем рождения">
+  <title>Вика · 15 лет</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <canvas id="glitter" aria-hidden="true"></canvas>
+
+  <main id="top">
+  <section class="cover">
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="topline">
+      <p>birthday <span>/</span> 15 edition</p>
+      <p>2026</p>
+    </header>
+
+    <div class="art art-left" aria-hidden="true">
+      <svg viewBox="0 0 600 760" fill="none">
+        <defs>
+          <linearGradient id="metalA" x1="70" y1="50" x2="520" y2="710" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#5f6f98"/>
+            <stop offset=".16" stop-color="#fafcff"/>
+            <stop offset=".34" stop-color="#7d8eb5"/>
+            <stop offset=".52" stop-color="#eef2ff"/>
+            <stop offset=".74" stop-color="#4a5577"/>
+            <stop offset="1" stop-color="#dfe6ff"/>
+          </linearGradient>
+          <filter id="shadowA" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="5"/>
+          </filter>
+        </defs>
+
+        <g filter="url(#shadowA)" opacity=".4" transform="translate(0 8)">
+          <ellipse cx="165" cy="408" rx="112" ry="310"
+                   transform="rotate(35 165 408)"
+                   stroke="#aab8dc" stroke-width="50"/>
+          <ellipse cx="175" cy="408" rx="82" ry="275"
+                   transform="rotate(35 175 408)"
+                   stroke="#eaf0ff" stroke-width="18"/>
+        </g>
+
+        <ellipse cx="165" cy="408" rx="112" ry="310"
+                 transform="rotate(35 165 408)"
+                 stroke="url(#metalA)" stroke-width="50"/>
+        <ellipse cx="175" cy="408" rx="82" ry="275"
+                 transform="rotate(35 175 408)"
+                 stroke="url(#metalA)" stroke-width="18"/>
+        <path d="M-72 640C105 586 98 370 217 291C319 224 387 82 278 24"
+              stroke="url(#metalA)"
+              stroke-width="26"
+              stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <div class="art art-right" aria-hidden="true">
+      <svg viewBox="0 0 560 540" fill="none">
+        <defs>
+          <linearGradient id="metalB" x1="70" y1="60" x2="470" y2="470" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#eef3ff"/>
+            <stop offset=".22" stop-color="#59678e"/>
+            <stop offset=".48" stop-color="#fafcff"/>
+            <stop offset=".72" stop-color="#7886a9"/>
+            <stop offset="1" stop-color="#dbe4ff"/>
+          </linearGradient>
+        </defs>
+
+        <ellipse cx="330" cy="300" rx="176" ry="112"
+                 transform="rotate(18 330 300)"
+                 stroke="#151e3d" stroke-width="78" opacity=".75"/>
+        <ellipse cx="330" cy="300" rx="176" ry="112"
+                 transform="rotate(18 330 300)"
+                 stroke="url(#metalB)" stroke-width="54"/>
+        <ellipse cx="330" cy="300" rx="176" ry="112"
+                 transform="rotate(18 330 300)"
+                 stroke="#edf2ff" stroke-width="5" opacity=".72"/>
+      </svg>
+    </div>
+
+    <section class="hero-copy" aria-labelledby="birthday-title">
+      <p class="kicker">happy birthday</p>
+      <h1 id="birthday-title">Вика<br><span>15 лет</span></h1>
+      <p class="subtitle">пусть новый возраст откроет новые пути</p>
+    </section>
+
+    <button class="letter-button" id="letterButton"
+            type="button"
+            aria-controls="letter"
+            aria-expanded="false">
+      <span>открыть</span>
+      <i aria-hidden="true">↗</i>
+    </button>
+
+    <article class="letter" id="letter" hidden>
+      <button class="letter-close"
+              id="letterClose"
+              type="button"
+              aria-label="Закрыть поздравление">×</button>
+
+      <p class="letter-kicker">Для Вики</p>
+      <h2>С пятнадцатым!</h2>
+
+      <p>Пусть впереди будет больше каталок (ну путешествий).</p>
+      <p>Что бы денчики разные не нападали</p>
+      <p>И что бы шахед не прилетел к тебе под ножки💑💑💑💑💑💑💑</p>
+
+      <p class="letter-end">С днём рождения ✦</p>
+    </article>
+  </section>
+
+  <section class="journey" aria-labelledby="journey-title">
+    <div class="journey-head">
+      <p>chapter / 01</p>
+      <p>Вика в движении</p>
+    </div>
+
+    <h2 id="journey-title">новые<br><span>пути</span></h2>
+
+    <div class="path-track" aria-label="Путешествия и возвращения">
+      <article class="path-card path-card-one reveal">
+        <p class="path-no">01 / ПУТЬ</p>
+        <div class="path-orbit" aria-hidden="true">
+          <i></i>
+          <b></b>
+        </div>
+        <h3>Путешествовать</h3>
+        <p>Новые города, виды и истории — всё то, что потом хочется вспоминать (а не только щахедики и цирконы).</p>
+      </article>
+
+      <article class="path-card path-card-two reveal">
+        <p class="path-no">02 / ДОМОЙ</p>
+        <div class="alexandria-mark" aria-hidden="true">
+          <span>A</span>
+          <i></i>
+        </div>
+        <h3>Александрия</h3>
+        <p>Не забывай приезжать сюда сдесь на тебя разные чихуахуа с денчиками и максимами не будут напать.</p>
+      </article>
+    </div>
+
+    <button class="next-chapter" id="nextChapter" type="button">
+      дальше
+      <span aria-hidden="true">↓</span>
+    </button>
+  </section>
+
+  <section class="wish-chapter" id="wishChapter" aria-labelledby="wish-title">
+    <div class="wish-grid" aria-hidden="true"></div>
+    <p class="wish-kicker">signature / wish</p>
+    <h2 id="wish-title"><span>пусть всё</span> получится</h2>
+
+    <button class="magic-orb" id="magicOrb" type="button" aria-label="Запустить праздничную анимацию">
+      <i></i>
+      <span>нажми</span>
+    </button>
+
+    <p class="wish-signature">с днём рождения, Вика · 15</p>
+  </section>
+  </main>
+</body>
+</html>
